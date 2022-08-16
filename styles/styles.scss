@@ -37,10 +37,13 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
-    transition: translateY(100%);
+    
+}
+
+.section {
+    transition: translateY(-100%);
     transition: all 0.4s ease-in-out;
     background-color: var(--primary-color);
-
 }
 
 // ___________________________________________________________

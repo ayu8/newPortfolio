@@ -1,5 +1,5 @@
-const sections = document.getElementsByClassName('sections');
-const sectBts = document.getElementsByClassName('controls-container');
+const sections = document.getElementsByClassName('section');
+const sectBtns = document.getElementsByClassName('controls-container');
 const sectBtn = document.getElementsByClassName('controls');
 
 const mainSect = document.getElementById('main');
@@ -15,6 +15,27 @@ function pageTransitions() {
             this.className += ' active-btn';
         })
     }
+
+    // sections active
+    mainSect.addEventListener('click', (e) => {
+        const id = e.target.dataset.id;
+
+        if (id) {
+            //removing selected from other buttons
+            sectBtns.forEach((btn) => {
+                btn.className.remove('active');
+            })
+            e.target.className.add('active');
+
+            // hide other sections
+            sections.forEach((section) => {
+                section.className.remove('active');
+            })
+
+            const element = document.getElementById(id);
+            element.className.add('active');
+        }
+    })
 }
 
 pageTransitions();
