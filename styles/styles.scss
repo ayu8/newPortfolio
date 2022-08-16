@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #191d2b;
+    --secondary-color: #27AE60;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 1.1rem;
+    color: white;
+    // transition: all 0.4s ease-in-out;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+    transition: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    background-color: var(--primary-color);
+
+}
+
+// ___________________________________________________________
+// 
+// ---------------------<< CONTROLS >>------------------------
+// ___________________________________________________________
+
+.controls-container {
+    position: fixed;
+    z-index: 10;   //want always at top
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+
+    .active-btn {
+        background-color: #35fe35 !important;
+        // transition: all 0.4s ease-in-out;
+        i {
+            color: white !important;
+        }
+    }
+
+    .controls {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: #818283;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.7rem 0;
+        box-shadow: var(--box-shadow-1);
+
+        i {
+            font-size: 1.2rem;
+            pointer-events: none;  // won't do anything if clicking around the button anywhere
+            color: #d5d5d5;
+        }
+    }
+}
