@@ -16,12 +16,14 @@ body {
     background-color: var(--primary-color);
     font-size: 1.1rem;
     color: white;
-    // transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: inherit;
+    font-family: inherit;
 }
 
 header {
@@ -37,13 +39,46 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
-    
 }
 
 .section {
-    transition: translateY(-100%);
+    transform: translateY(-100%) scale(0);
     transition: all 0.4s ease-in-out;
     background-color: var(--primary-color);
+}
+
+.sec1 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec2 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec3 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec4 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.active {
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-100%) scaleY(0);
+        }
+
+        100% {
+            transform: translateY(0) scaleY(1);
+        }
+    }
 }
 
 // ___________________________________________________________
@@ -64,13 +99,13 @@ section {
 
     .active-btn {
         background-color: #35fe35 !important;
-        // transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         i {
             color: white !important;
         }
     }
 
-    .controls {
+    .control {
         padding: 1rem;
         cursor: pointer;
         background-color: #818283;
@@ -89,4 +124,16 @@ section {
             color: #d5d5d5;
         }
     }
+}
+
+// ___________________________________________________________
+// 
+// ---------------------<< HEADER >>--------------------------
+// ___________________________________________________________
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    
 }

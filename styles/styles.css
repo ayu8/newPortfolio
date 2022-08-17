@@ -16,11 +16,14 @@ body {
   background-color: var(--primary-color);
   font-size: 1.1rem;
   color: white;
+  transition: all 0.4s ease-in-out;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
+  font-family: inherit;
 }
 
 header {
@@ -36,9 +39,54 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
-  transition: translateY(100%);
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--primary-color);
+}
+
+.sec1 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 1s ease-in-out;
+          animation: scaleAnim 1s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls-container {
@@ -54,11 +102,12 @@ section {
 }
 .controls-container .active-btn {
   background-color: #35fe35 !important;
+  transition: all 0.4s ease-in-out;
 }
 .controls-container .active-btn i {
   color: white !important;
 }
-.controls-container .controls {
+.controls-container .control {
   padding: 1rem;
   cursor: pointer;
   background-color: #818283;
@@ -71,8 +120,14 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
-.controls-container .controls i {
+.controls-container .control i {
   font-size: 1.2rem;
   pointer-events: none;
   color: #d5d5d5;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */
