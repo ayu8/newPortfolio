@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>AYUSH</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="main-content">
     
-    <header class="header section sec1 active" id="home">
+    <header class="header container active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/photostudio-2-designify.png" alt="">
+                    <img src="img/mypic2.png" alt="">
                 </div>
             </div>
 
@@ -31,16 +31,19 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
 
-                <a href="" class="main-btn">
-                    <span class="btn-text"> View Resume </span>
-                    <span class="btn-icon"> <i class="fa-solid fa-download"></i> </span>
-                </a>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text"> View Resume </span>
+                        <span class="btn-icon"> <i class="fa-solid fa-download"></i> </span>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </header>
 
     <main>
-        <section class="sec2 section about" id="about">
+        <section class="container about" id="about">
             <div class="main-title">
                 <h2>
                     About 
@@ -60,7 +63,7 @@
                     </p>
 
                     <div class="btn-con">
-                        <a href="" class="main-btn">
+                        <a href="#" class="main-btn">
                             <span class="btn-text"> View Resume </span>
                             <span class="btn-icon"> <i class="fa-solid fa-download"></i> </span>
                         </a>
@@ -74,59 +77,381 @@
                             <p class="small-text"> Projects <br> Completed </p>
                         </div>
                     </div>
+
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">300+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">400+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+
+            <h4 class="stat-title"> My Timeline </h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2010 - present</p>
+                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2008 - 2011</p>
+                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2016 - 2017</p>
+                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2009 - 2013</p>
+                    <h5>Business Degree<span> - Sussex University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2013 - 2016</p>
+                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2017 - present</p>
+                    <h5>3d Animation<span> - Brighton University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container portfolio" id="portfolio">
+
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here are some of my projects that I've done so far.
+            </p>
+            <div class="portfolios">
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/spotify-player.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> Spotify Music Player </h3>
+                        <div class="icons">
+                            <a href="https://github.com/ayu8/Music-Player" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://spotify-ayu8.netlify.app/" class="icon" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> Portfolio Website </h3>
+                        <div class="icons">
+
+                            <a href="https://github.com/ayu8/newPortfolio" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="http://ayush8.me/" class="icon" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/cgpa-calci.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> CGPA Calculator </h3>
+                        <div class="icons">
+                            <a href="https://github.com/ayu8/CGPA-Calculator" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="https://cgpa-calci.netlify.app/" class="icon" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+
+                            <a href="https://youtu.be/IU_xyvHvXRk" class="icon" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/passEval.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> Pass Eval </h3>
+                        <div class="icons">
+
+                            <a href="https://github.com/ayu8/PassEval" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" class="icon" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/cust-segm.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> Customer Segmentation </h3>
+                        <div class="icons">
+
+                            <a href="https://github.com/ayu8/Customer-Segmentation" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/space-inv.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3> Space Invaders Game </h3>
+                        <div class="icons">
+
+                            <a href="https://github.com/ayu8/Space-Invaders-Game" class="icon" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container resume" id="resume">
+            <div class="main-title">
+                <h2>My <span>Resume</span><span class="bg-text">My CV</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="resume-container">
+                <center>
+                    <iframe src="assets/Resume-Ayush_Singh.pdf" width="100%"></iframe>
+                </center>
             </div>
         </section>
 
-        <section class="sec3 section portfolio" id="portfolio">
-
-        </section>
-
-        <section class="sec4 section skills" id="skills">
-
-        </section>
-
-        <section class="sec5 section profiles" id="profiles">
+        <section class="container contact" id="contact">
             
-        </section>
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
 
-        <section class="sec6 section contact" id="contact">
-            
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Kanpur, UP (India)
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-at"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: singhayush873@gmail.com</span>
+                                </p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 9696894207</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: English, Hindi </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.facebook.com/mr.ayush8/" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <a href="https://twitter.com/SinghAyu88" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/ayushs8/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>                                
+
+                                <a href="https://github.com/ayu8" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCvQ7IH8O_zZBH5lbZqAQ8Nw" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+
+                                <a href="https://wa.me/+919696894207?text=Hi" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/ayush__88/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                
+                                <a href="https://www.snapchat.com/add/ayussh_88?share_id=PB2FyNUyR5o&locale=en-GB" target="_blank">
+                                    <i class="fa-brands fa-snapchat"></i>
+                                </a>
+                                </a>
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="https://formspree.io/f/xwkzpljp" method="POST" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="Username" required placeholder="YOUR NAME">
+                                <input type="email" name="Email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="Subject" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" name="msg" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="form-submit-btn">
+                                    <input value="Submit"> </input>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
         
     </main>
 
-    <div class="controls-container">
-        <div class="control ctrl-1 active-btn" data-id="home">
+    <div class="controls">
+        <div class="control active-btn" data-id="home">
             <i class="fa-solid fa-home"></i>
         </div>
 
-        <div class="control ctrl-2" data-id="about">
+        <div class="control" data-id="about">
             <i class="fa-solid fa-user" ></i>
         </div>
 
-        <div class="control ctrl-3" data-id="portfolio">
+        <div class="control" data-id="portfolio">
             <i class="fa-solid fa-briefcase"></i>
         </div>
 
-        <div class="control ctrl-4" data-id="skills">
-            <i class="fa-solid fa-newspaper"></i>
+        <div class="control" data-id="resume">
+            <i class="fa-solid fa-file"></i>
         </div>
 
-        <div class="control ctrl-5" data-id="profiles">
-            <i class="fa-solid fa-hashtag"></i>
-        </div>
-
-        <div class="control ctrl-6" data-id="contact">
+        <div class="control" data-id="contact">
             <i class="fa-solid fa-envelope-open"></i>
         </div>
+
+
     </div>
 
-    <footer>
-
-    </footer>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
 
     <script src="https://kit.fontawesome.com/e3d631b53c.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
+
 </html>
