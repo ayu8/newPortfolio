@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-primary: #14192b;
+  --color-secondary: #41c85c;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -22,8 +22,8 @@
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-primary: #fbeeeeca;
+  --color-secondary: #c75a67;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -296,54 +296,11 @@ section {
 }
 
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
-}
-.about-container .right-about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-.about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
-  border-radius: 5px;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.about-container .right-about .about-item:hover {
-  cursor: default;
-  transform: translateY(-5px);
-  border: 1px solid var(--color-secondary);
-  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-}
-.about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-.about-container .right-about .about-item .abt-text .large-text {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-.about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: var(--color-grey-1);
-  letter-spacing: 2px;
-}
-.about-container .right-about .about-item .abt-text .small-text::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15px;
-  width: 2rem;
-  height: 2px;
-  background-color: var(--color-grey-5);
 }
 .about-container .left-about {
   padding-right: 5rem;
@@ -437,7 +394,7 @@ section {
 
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -483,6 +440,10 @@ section {
 }
 .timeline .timeline-item p {
   color: var(--color-grey-2);
+}
+.timeline .timeline-item p bold {
+  font-weight: bold;
+  color: var(--color-grey-1);
 }
 
 .port-text {
