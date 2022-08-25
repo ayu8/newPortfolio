@@ -161,7 +161,6 @@ section {
 
 .resume-container {
   max-height: 80vh;
-  background-color: red;
   overflow: auto;
 }
 .resume-container iframe {
