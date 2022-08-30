@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Nunito:ital@0;1&family=Source+Sans+Pro:ital@0;1&family=Ubuntu:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,22 +23,21 @@
 }
 
 .light-mode {
-  --color-primary: #fbeeeeca;
+  --color-primary: #edf6f7e4;
   --color-secondary: #c75a67;
-  --color-white: #454e56;
+  --color-white: #3a1a1a;
   --color-black: #000;
   --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
+  --color-grey-1: #303a42;
+  --color-grey-4: #6c7983;
   --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
+  --color-grey-2: #454e56;
+  --color-grey-5: #f1eaea;
   --color-grey-6: #12181b;
 }
 
 body {
   background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -376,7 +376,7 @@ section {
 
 .stat-title {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
@@ -401,7 +401,7 @@ section {
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-5);
+  border-left: 3px solid var(--color-grey-4);
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
@@ -504,7 +504,7 @@ section {
   justify-content: center;
   margin: 0 1rem;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .portfolios .portfolio-item .hover-items .icons .icon i {
   font-size: 1.5rem;
@@ -572,13 +572,14 @@ section {
   height: 50px;
   border-radius: 50%;
   margin: 0 0.4rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in;
 }
 .contact-content-con .left-contact .contact-icon a:hover {
   background-color: var(--color-secondary);
+  transition: all 0.1s ease-out;
 }
 .contact-content-con .left-contact .contact-icon a:hover i {
-  color: var(--color-primary);
+  color: white;
 }
 .contact-content-con .left-contact .contact-icon a i {
   display: flex;
@@ -612,23 +613,25 @@ section {
 .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-con .right-contact .form-submit-btn {
+.contact-content-con .right-contact .submit-btn {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.contact-content-con .right-contact .form-submit-btn input {
+.contact-content-con .right-contact .submit-btn input {
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 6px;
-  padding: 8px 0px;
+  padding: 8px 10px;
   text-align: center;
   font-size: 1rem;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-grey-3);
   box-shadow: var(--box-shadow-1);
   color: black;
 }
-.contact-content-con .right-contact .form-submit-btn input:hover {
-  background-color: var(--color-grey-3);
+.contact-content-con .right-contact .submit-btn input:hover {
+  background-color: var(--color-grey-2);
   color: black;
 }
 
@@ -680,6 +683,7 @@ section {
 }
 
 .main-title {
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 .main-title h2 {
@@ -957,4 +961,35 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
+}
+.bg-text {
+  font-family: "Aboreto", cursive;
+  font-weight: bolder;
+}
+
+.main-title {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p, span, input, textarea {
+  font-family: "Nunito", sans-serif;
+}
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h5 {
+  font-family: "Nunito", sans-serif;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 span {
+  font-family: "Ubuntu", sans-serif;
 }/*# sourceMappingURL=styles.css.map */

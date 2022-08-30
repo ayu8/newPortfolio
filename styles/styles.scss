@@ -1,3 +1,6 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Nunito:ital@0;1&family=Source+Sans+Pro:ital@0;1&family=Ubuntu:ital@0;1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,16 +25,16 @@
 }
 
 .light-mode {
-    --color-primary: #fbeeeeca;
+    --color-primary: #edf6f7e4;
     --color-secondary: #c75a67;
-    --color-white: #454e56;
+    --color-white: #3a1a1a;
     --color-black: #000;
     --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
+    --color-grey-1: #303a42;
+    --color-grey-4: #6c7983;
     --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
+    --color-grey-2: #454e56;
+    --color-grey-5: #f1eaea;
     --color-grey-6: #12181b;
 }
 
@@ -334,7 +337,7 @@ section {
 
 .stat-title {
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
@@ -363,7 +366,7 @@ section {
     .timeline-item {
         position: relative;
         padding-left: 3rem;
-        border-left: 1px solid var(--color-grey-5);
+        border-left: 3px solid var(--color-grey-4);
         .tl-icon {
             position: absolute;
             left: -27px;
@@ -465,7 +468,7 @@ section {
                     justify-content: center;
                     margin: 0 1rem;
                     cursor: pointer;
-                    transition: all .4s ease-in-out;
+                    transition: all .2s ease-in-out;
                     i {
                         font-size: 1.5rem;
                         color: var(--color-white);
@@ -542,10 +545,14 @@ section {
                 height: 50px;
                 border-radius: 50%;
                 margin: 0 .4rem;
-                transition: all .4s ease-in-out;
+                transition: all 0.2s ease-in;
                 &:hover {
                     background-color: var(--color-secondary);
-                    i { color: var(--color-primary); }
+                    
+                    transition: all 0.1s ease-out;
+                    i {
+                        color: white;
+                    }
                 }
                 i {
                     display: flex;
@@ -583,22 +590,23 @@ section {
             }
         }
         
-        .form-submit-btn {
-
+        .submit-btn {
+            width: 60%;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             input {
                 border: 2px solid transparent;
                 cursor: pointer;
                 border-radius: 6px;
-                padding: 8px 0px;
+                padding: 8px 10px;
                 text-align: center;
                 font-size: 1rem;
-                background-color: var(--color-grey-4);
+                background-color: var(--color-grey-3);
                 box-shadow: var(--box-shadow-1);
                 color: black;
                 &:hover {
-                    background-color: var(--color-grey-3);
+                    background-color: var(--color-grey-2);
                     color: black;
                 }
             }
@@ -659,6 +667,7 @@ section {
 }
 
 .main-title {
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     h2 {
         position: relative;
@@ -986,5 +995,43 @@ section {
                 font-size: 4rem;
             }
         }
+    }
+}
+
+
+
+
+// testing fonts
+
+.bg-text {
+    font-family: 'Aboreto', cursive;
+    font-weight: bolder;
+}
+
+.main-title {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p, span, input, textarea {
+    font-family: 'Nunito', sans-serif;
+}
+
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h5 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    span {
+        font-family: 'Ubuntu', sans-serif;
     }
 }

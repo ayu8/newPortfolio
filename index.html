@@ -29,7 +29,7 @@
             <div class="right-header">
                 <h1 class="name">
                     Hi, I'm <span> Ayush Singh </span>
-                    A Web Developer
+                    &nbsp; - &nbsp; A Web Developer
                 </h1>
 
                 <p>
@@ -60,7 +60,7 @@
 
             <div class="about-container">
                 <div class="left-about">
-                    <h4>Information about me</h4>
+                    <h4 class="stat-title" >Information about me</h4>
                     <p>
                         I am from Kanpur, Uttar Pradesh
                         <br>
@@ -130,7 +130,7 @@
 
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/spotify-player.jpg" alt="">
+                        <img src="img/spotify-player_sq.png" alt="">
                     </div>
                     <div class="hover-items">
                         <h3> Spotify Music Player </h3>
@@ -147,7 +147,7 @@
                 
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/portfolio.jpg" alt="img">
+                        <img src="img/portfolio_sq.png" alt="img">
                     </div>
                     <div class="hover-items">
                         <h3> Portfolio Website </h3>
@@ -167,7 +167,7 @@
 
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/cgpa-calci.jpg" alt="">
+                        <img src="img/cgpa-calci_sq.jpg" alt="">
                     </div>
                     <div class="hover-items">
                         <h3> CGPA Calculator </h3>
@@ -189,7 +189,7 @@
 
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/passEval.png" alt="">
+                        <img src="img/passEval_sq.png" alt="">
                     </div>
                     <div class="hover-items">
                         <h3> Pass Eval </h3>
@@ -264,7 +264,7 @@
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>Contact me here</h4>
+                        <h4 style = "margin-bottom: 25px;"> Contact me here </h4>
 
                         <div class="contact-info">
                             <div class="contact-item">
@@ -348,18 +348,21 @@
                     <div class="right-contact">
                         <form action="https://formspree.io/f/xwkzpljp" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" name="Username" required placeholder="YOUR NAME">
-                                <input type="email" name="Email" required placeholder="YOUR EMAIL">
+                                <input type="text" name="Username" required placeholder="Your Name">
+                                <input type="email" name="Email" required placeholder="Your Email">
                             </div>
                             <div class="input-control">
-                                <input type="text" name="Subject" required placeholder="ENTER SUBJECT">
+                                <input type="text" name="Subject" required placeholder="Enter Subject">
                             </div>
                             <div class="input-control">
                                 <textarea name="" id="" name="msg" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
                             <div class="submit-btn">
+
+                                <input type="reset" id="" value="Clear"> 
+
                                 <a href="#" class="form-submit-btn">
-                                    <input value="Submit"> </input>
+                                    <input type="submit" value="Submit">
                                 </a>
                             </div>
                         </form>
