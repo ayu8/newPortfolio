@@ -531,8 +531,9 @@ section {
   flex: 2;
 }
 .contact-content-con .left-contact h4 {
-  margin-top: 1rem;
-  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
 .contact-content-con .left-contact p {
@@ -541,8 +542,10 @@ section {
 }
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 0;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
@@ -559,7 +562,12 @@ section {
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 .contact-content-con .left-contact .contact-icon a {
   display: flex;
@@ -746,7 +754,7 @@ section {
     top: auto;
     bottom: 0;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -756,6 +764,9 @@ section {
     margin: 1rem 0.3rem;
     width: 6vw;
     height: 6vw;
+  }
+  .controls .control i {
+    font-size: 72%;
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
@@ -791,6 +802,10 @@ section {
   }
   .contact-content-con {
     flex-direction: column;
+  }
+  .contact-content-con .left-contact .contact-icon a {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
   }
   .contact-content-con .right-contact {
     margin-left: 0;
@@ -985,4 +1000,27 @@ h1 {
 }
 h1 span {
   font-family: "Ubuntu", sans-serif;
+}
+
+/***************** Designing Pseudo Scrollbar  **************/
+::-webkit-scrollbar {
+  width: 6px;
+  outline: none;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
