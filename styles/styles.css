@@ -8,7 +8,7 @@
 
 :root {
   --color-primary: #04122b;
-  --color-secondary: #41c85c;
+  --color-secondary: #a38f46;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -191,7 +191,7 @@ section {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
+  height: 85%;
   width: 68%;
   margin-left: 4rem;
   background-color: inherit;
@@ -598,7 +598,6 @@ section {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
-  font-family: inherit;
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
@@ -606,12 +605,6 @@ section {
   width: 100%;
   color: var(--color-white);
   resize: none;
-}
-.contact-content-con .right-contact .i-c-2 {
-  display: flex;
-}
-.contact-content-con .right-contact .i-c-2 :last-child {
-  margin-left: 1.5rem;
 }
 .contact-content-con .right-contact .submit-btn {
   width: 60%;
