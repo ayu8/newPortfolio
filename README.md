@@ -1,4 +1,4 @@
-Deployed [here](http://ayush8.me/)
+Deployed [here](https://ayush8.netlify.app/)
 
 
 
